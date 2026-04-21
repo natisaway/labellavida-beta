@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Bella Vita</title>
+  <link rel="icon" type="image/png" href="images/logo-small.png">
+  <link rel="apple-touch-icon" href="images/logo-small.png">
+  
+  <style>
+    :root {
+      --bg-blue: #c8daea;
+      --primary: #0f5c78;
+      --primary-dark: #0c4b62;
+      --white: #ffffff;
+      --text-dark: #1f2d3a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg-blue);
+      font-family: "Segoe UI", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1100px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    /* Top title */
+    .site-title {
+      font-size: 3.2rem;
+      letter-spacing: 0.15em;
+      color: var(--primary);
+      margin-bottom: 50px;
+      font-weight: 600;
+    }
+
+    /* Card */
+    .card {
+      background: var(--white);
+      border-radius: 40px;
+      padding: 70px 40px 80px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 60px;
+      text-transform: uppercase;
+    }
+
+    /* Buttons */
+    .lang-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .lang-btn {
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 22px 60px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      border-radius: 22px;
+      letter-spacing: 0.08em;
+      transition: background 0.2s ease, transform 0.2s ease;
+      min-width: 220px;
+    }
+
+    .lang-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .site-title {
+        font-size: 2.4rem;
+      }
+
+      .card {
+        padding: 50px 25px 60px;
+        border-radius: 28px;
+      }
+
+      .lang-buttons {
+        gap: 25px;
+      }
+
+      .lang-btn {
+        width: 100%;
+        max-width: 260px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+    <div class="site-title">LA BELLA VIDA</div>
+
+    <div class="card">
+      <div class="subtitle">
+        Adult Day Program in North Dartmouth, MA
+      </div>
+
+      <div class="lang-buttons">
+        <a href="english.html" class="lang-btn">ENGLISH</a>
+        <a href="espanol.html" class="lang-btn">ESPAÑOL</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Bella Vida Adult Day Services</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo-small.png" />
+  <link rel="apple-touch-icon" href="logo-small.png" />
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- SIDEBAR -->
+  <aside id="sidebar" class="sidebar">
+    <button type="button" class="close-btn" onclick="toggleSidebar()">✕</button>
+    <nav class="sidebar-nav">
+      <a href="#benefits">Quién se beneficia</a>
+      <a href="#medical">Beneficios médicos</a>
+      <a href="#social">Servicios sociales</a>
+      <a href="#recreation">Recreación</a>
+      <a href="#nutrition">Nutrición</a>
+      <a href="#beauty">Salón de belleza</a>
+      <a href="#transportation">Transporte</a>
+      <a href="#volunteers"><strong>Voluntarios</strong></a>
+      <a href="#program-contacts"><strong>Contacto</strong></a>
+      <a href="#social-media"><strong>Redes sociales</strong></a>
+    </nav>
+  </aside>
+
+  <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <button type="button" class="menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+
+      <div class="logo">
+        <a href="index.html" aria-label="La Bella Vida Home">
+          <img src="images/logo-web.png" alt="La Bella Vita" />
+        </a>
+      </div>
+
+      <div class="top-links">
+        <a href="english.html">English</a>
+        <a href="espanol.html">Español</a>
+        <a href="#program-contacts">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1>Cuidado con dignidad y compasión</h1>
+  
+          <p class="hero-lead">
+            Apoyando la salud, la independencia y la calidad de vida en un ambiente seguro y acogedor.
+          </p>
+  
+          <div class="hero-actions">
+            <a href="#program-contacts" class="btn primary hero-cta">Contáctanos</a>
+            <a href="#benefits" class="btn secondary hero-cta-outline">Más información</a>
+          </div>
+        </div>
+  
+        <div class="hero-image-wrap">
+          <div class="hero-image-card small-hero">
+            <img src="images/wheelchair2.jpg" alt="Programa La Bella Vida" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+        
+        <!-- HERO DETAILS -->
+        <section class="hero-details">
+        <div class="container">
+          <div class="hero-description">
+            <p>
+              Somos un programa de cuidado diurno para adultos aprobado por el estado y basado en la comunidad que ofrece
+              servicios de salud, rehabilitación y recreación a personas que necesitan
+              asistencia para vivir de manera independiente.
+            </p>
+
+            <p>
+              Esto permite que las personas continúen viviendo en casa y eviten ser ubicadas en un
+              centro de enfermería, mientras siguen recibiendo atención de calidad en un entorno seguro y de apoyo.
+            </p>
+            
+            <p>
+              Nuestra prioridad es mantener la calidad de vida dentro de nuestras familias y comunidades,
+              mientras brindamos tranquilidad a los cuidadores.
+            </p>
+            
+            <p>
+              Aquí, queremos que se sienta como en casa — como parte de la
+              <strong>Familia La Bella Vida</strong>.
+            </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO BENEFITS -->
+  <section id="benefits" class="section cards-section">
+    <div class="container">
+      <h2 class="section-title">¿Quién se beneficia?</h2>
+      <div class="card-grid">
+        <div class="card">Adultos limitados por lesiones, enfermedades o fragilidad debido a la edad</div>
+        <div class="card">Personas con pérdida de memoria o demencia</div>
+        <div class="card">Pacientes con Alzheimer o Parkinson</div>
+        <div class="card">Personas que necesitan ayuda con las actividades diarias</div>
+        <div class="card">Recuperación de derrames cerebrales, ataques cardíacos o accidentes</div>
+        <div class="card">Adultos confinados en el hogar que necesitan interacción social</div>
+        <div class="card">Adultos que experimentan depresión o condiciones psiquiátricas</div>
+      </div>
+      </div>
+      </section>
+
+  <!-- MEDICAL BENEFITS -->
+  <section id="medical" class="section split-section">
+    <div class="container split">
+      <div class="split-text">
+        <h2>Beneficios médicos</h2>
+        <ul class="checklist">
+          <li>Supervisión médica por enfermeras y personal capacitado</li>
+          <li>Evaluaciones individuales de atención</li>
+          <li>Manejo de medicamentos e inyecciones</li>
+          <li>Cuidado de heridas, alimentación por sonda y cuidado traqueal</li>
+          <li>Monitoreo de azúcar en la sangre y oxígeno</li>
+          <li>Asistencia con movilidad y actividades diarias</li>
+          <li>Coordinación de terapia física, ocupacional y del habla</li>
+          <li>Gestión continua de casos</li>
+        </ul>
+        </div>
+
+      <div class="split-image">
+        <img src="images/OT.jpg" alt="Medical support" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section id="social" class="section shaded">
+    <div class="container">
+      <h2 class="section-title">Servicios sociales</h2>
+
+      <div class="two-col-text">
+        <div>
+          <h3>Ofrecemos</h3>
+          <ul>
+            <li>Información sobre beneficios de servicios diurnos</li>
+            <li>Evaluaciones de admisión</li>
+            <li>Orientación sobre cuidado a largo plazo</li>
+            <li>Referencias comunitarias</li>
+            <li>Consultas para familias y cuidadores</li>
+          </ul>
+        </div>
+      
+        <div>
+          <h3>Servicios adicionales</h3>
+          <ul>
+            <li>Intérprete y traducciones</li>
+            <li>Clases de ciudadanía de EE. UU.</li>
+            <li>Clases de ESL (inglés como segundo idioma)</li>
+            <li>Clases de computación</li>
+            <li>Notario público</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      </section>
+
+  <!-- RECREATION -->
+  <section id="recreation" class="recreation-alt">
+    <div class="container">
+      <div class="recreation-text">
+        <h2 class="section-title">Servicios recreativos</h2>
+
+        <p class="recreation-intro">
+          Nos enfocamos en las fortalezas del cliente, así como en sus debilidades, y utilizamos cada interacción
+          como una oportunidad para ayudarles a sentirse bien consigo mismos y con el tiempo que pasan con nosotros.
+        </p>
+        
+        <p>
+          Contamos con varios clubes de interés especial donde nuestros participantes pueden reunirse y compartir
+          sus experiencias de vida. Actividades especiales como ejercicio, clases de computación y de inglés,
+          y excursiones semanales a museos, parques y otros centros culturales mejoran la
+          experiencia de La Bella Vida.
+        </p>
+        
+        <div class="recreation-content">
+          <h3>Actividades incluidas semanalmente</h3>
+        
+          <ul class="recreation-list two-column-list">
+            <li>Arte y manualidades</li>
+            <li>Música y canto en grupo</li>
+            <li>Lectura y grupos de discusión</li>
+            <li>Juegos de cartas y de mesa</li>
+            <li>Rompecabezas</li>
+            <li>Juegos activos</li>
+            <li>Cocina</li>
+            <li>Narración de historias</li>
+            <li>Bingo</li>
+            <li>Computadoras para programas de estimulación de la memoria</li>
+            <li>Invitados musicales</li>
+            <li>Interacción con voluntarios</li>
+            <li>Cumpleaños y fiestas especiales</li>
+            <li>Devociones y recuerdos compartidos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUTRITION -->
+  <section id="nutrition" class="section shaded nutrition">
+    <div class="container">
+      <h2 class="section-title">Nutrición</h2>
+  
+      <p class="recreation-intro">
+        Nuestro dietista licenciado crea un menú diario que brinda a nuestros participantes una nutrición equilibrada,
+        con comidas sabrosas y bien presentadas que aseguran una ingesta diaria de los nutrientes necesarios.
+      </p>
+  
+      <p>
+        <strong>*Dietas especiales</strong> se pueden adaptar fácilmente y siempre hay asistencia disponible durante las comidas.
+      </p>
+    </div>
+  </section>
+  
+  <!-- BEAUTY SALON -->
+  <section id="beauty" class="section">
+    <div class="container">
+      <h2 class="section-title">Salón de belleza</h2>
+  
+      <div class="split">
+        <div>
+          <p>
+            Su ser querido puede disfrutar de cortes y peinados de cabello, así como
+            recibir una relajante manicura.
+          </p>
+          <p>
+            Para los participantes, se pueden programar citas regulares de belleza con
+            el salón a través del centro. Esto les brinda a sus seres queridos una razón
+            más especial para asistir.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>Servicios incluidos</h3>
+          <ul class="checklist">
+            <li>Cortes y peinados</li>
+            <li>Manicuras</li>
+            <li>Citas programadas</li>
+            <li>Comodidad en el lugar</li>
+          </ul>
+        </div>
+        </div>
+        </div>
+        </section>
+
+  <!-- TRANSPORTATION -->
+  <section id="transportation" class="section shaded">
+    <div class="container">
+      <h2 class="section-title">Transporte</h2>
+
+      <div class="split reverse">
+        <div>
+          <p>
+            Además, con gusto organizamos transporte para personas mayores hacia y desde
+            todas las citas médicas fuera de nuestro centro.
+          </p>
+          <p>
+            Si es necesario, también le ayudaremos con la documentación requerida.
+          </p>
+        </div>
+      
+        <div class="info-box">
+          <h3>Apoyo de transporte</h3>
+          <ul class="checklist">
+            <li>Citas médicas</li>
+            <li>Coordinación puerta a puerta</li>
+            <li>Asistencia con documentación</li>
+            <li>Tranquilidad para los cuidadores</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEERS -->
+  <section id="volunteers" class="section">
+    <div class="container">
+      <h2 class="section-title">Voluntarios</h2>
+
+      <div class="split">
+        <div>
+          <p>
+            Ayudar a los cuidadores y a los adultos cuyas actividades están limitadas por lesiones,
+            enfermedades o la fragilidad de la edad puede ser personalmente revitalizante y
+            profundamente gratificante.
+          </p>
+          <p>
+            Ser cuidador de otra persona a menudo trae muchas bendiciones a cambio.
+            Ser voluntario en La Bella Vida es una manera significativa de retribuir a su
+            comunidad mientras hace una verdadera diferencia en el día de alguien.
+          </p>
+          <p>
+            Si está interesado en convertirse en voluntario, también puede contactarnos
+            al <strong>(774) 202-1065</strong>.
+          </p>
+        </div>
+      
+        <div class="info-box">
+          <h3>Conviértase en voluntario</h3>
+          <p>Haga clic abajo para completar nuestro formulario de interés para voluntarios.</p>
+      
+          <button type="button" class="contact-open-btn" onclick="openVolunteerModal()">
+            Formulario de voluntariado
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER MODAL -->
+  <div id="volunteerModal" class="contact-modal" aria-hidden="true">
+    <div class="contact-modal-overlay" onclick="closeVolunteerModal()"></div>
+
+    <div class="contact-modal-box">
+      <button type="button" class="contact-modal-close" onclick="closeVolunteerModal()">✕</button>
+
+      <h3>Volunteer With Us</h3>
+
+      <form
+        id="volunteerForm"
+        action="https://formspree.io/f/xaqajnqg"
+        method="POST"
+        class="contact-form"
+      >
+      <label>
+        Nombre:
+        <input type="text" name="name" required />
+      </label>
+      
+      <label>
+        Correo electrónico:
+        <input type="email" name="email" required />
+      </label>
+      
+      <label>
+        Número de teléfono:
+        <input type="tel" name="phone" required />
+      </label>
+      
+      <label>
+        Escuela (opcional):
+        <input type="text" name="school" />
+      </label>
+      
+      <label>
+        Mensaje (opcional):
+        <textarea name="message"></textarea>
+      </label>
+      
+      <input type="hidden" name="_subject" value="Envío de formulario de voluntariado" />
+      
+      <button type="submit" class="btn primary">
+        Enviar
+      </button>
+      </form>
+
+      <div id="volunteerSuccess" style="display: none; text-align: center; padding: 20px;">
+        <h3>¡Gracias!</h3>
+        <p>Su formulario de voluntariado ha sido enviado con éxito.</p>
+      
+        <button type="button" class="btn primary" onclick="closeVolunteerModal()">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+
+<!-- CONTACTS -->
+<section id="program-contacts" class="contact-section section">
+  <div class="container">
+    <h2 class="section-title">Contáctanos</h2>
+
+    <div class="contact-card-row">
+      <div class="contact-info-card">
+        <h3>Director del programa</h3>
+
+        <div class="contact-block">
+          <strong>Teléfono</strong>
+          <p><a href="tel:7745107370">774-510-7370</a></p>
+        </div>
+
+        <div class="contact-block email-block">
+          <strong>Correo electrónico</strong>
+          <p><a href="mailto:lbvboston@yahoo.com">lbvboston@yahoo.com</a></p>
+        </div>
+      </div>
+
+      <div class="contact-info-card">
+        <h3>Instalación</h3>
+
+        <div class="contact-block">
+          <strong>Teléfono</strong>
+          <p><a href="tel:7742021065">774-202-1065</a></p>
+        </div>
+
+        <div class="contact-block email-block">
+          <strong>Correo electrónico</strong>
+          <p><a href="mailto:lbvboston@yahoo.com">lbvboston@yahoo.com</a></p>
+        </div>
+      </div>
+
+      <div class="contact-info-card">
+        <h3 class="small-title">Coordinador de alcance / admisiones</h3>
+
+        <div class="contact-block">
+          <strong>Teléfono</strong>
+          <p><a href="tel:7745107374">774-510-7374</a></p>
+        </div>
+
+        <div class="contact-block email-block">
+          <strong>Correo electrónico</strong>
+          <p><a href="mailto:lbvoutreach@yahoo.com">lbvoutreach@yahoo.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-button-wrap">
+      <button type="button" class="contact-open-btn" onclick="openContactModal()">
+        Contáctanos
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT MODAL -->
+<div id="contactModal" class="contact-modal" aria-hidden="true">
+  <div class="contact-modal-overlay" onclick="closeContactModal()"></div>
+
+  <div class="contact-modal-box">
+    <button type="button" class="contact-modal-close" onclick="closeContactModal()">✕</button>
+
+    <h3>Envíanos un mensaje</h3>
+
+    <form
+      id="contactForm"
+      action="https://formspree.io/f/xqegjnqq"
+      method="POST"
+      class="contact-form"
+    >
+      <label>
+        Nombre:
+        <input type="text" name="name" required />
+      </label>
+
+      <label>
+        Número de teléfono:
+        <input type="tel" name="phone" />
+      </label>
+
+      <label>
+        Correo electrónico:
+        <input type="email" name="email" required />
+      </label>
+
+      <label>
+        Motivo de contacto:
+        <textarea name="message" required></textarea>
+      </label>
+
+      <button type="submit" class="btn primary">
+        Enviar mensaje
+      </button>
+    </form>
+
+    <div id="contactSuccess" style="display: none; text-align: center; padding: 20px;">
+      <h3>¡Gracias!</h3>
+      <p>Su mensaje ha sido enviado con éxito.</p>
+
+      <button type="button" class="btn primary" onclick="closeContactModal()">
+        Cerrar
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SOCIAL MEDIA -->
+<section id="social-media" class="section">
+  <div class="container">
+    <h2 class="section-title">Síguenos</h2>
+
+    <div class="social-grid">
+      <div class="social-card">
+        <span class="social-label">Facebook</span>
+        <h3>La Bella Vida ADH</h3>
+
+        <a href="https://www.facebook.com/profile.php?id=61587575188019" target="_blank" rel="noopener noreferrer">
+          <img src="images/facebook.png" alt="Facebook" />
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61587575188019"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn primary"
+        >
+          Visitar Facebook
+        </a>
+      </div>
+
+      <div class="social-card">
+        <span class="social-label">Instagram</span>
+        <h3>@labellavidaadh</h3>
+
+        <a href="https://www.instagram.com/labellavidaadh?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+          <img src="images/instagram.png" alt="Instagram" />
+        </a>
+
+        <a
+          href="https://www.instagram.com/labellavidaadh?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn primary"
+        >
+          Visitar Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>La Bella Vida</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
