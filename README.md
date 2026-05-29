@@ -1,5 +1,9 @@
 # La Bella Vida Website – Full Instructional Guide
 
+## Direct Link to Page
+``https://natisaway.github.io/labellavida-beta/
+``
+
 ## Overview
 This website is a static front-end project built using:
 - HTML for structure
