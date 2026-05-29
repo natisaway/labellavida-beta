@@ -45,6 +45,15 @@
       text-align: center;
     }
 
+    .index-logo {
+      display: block;
+      width: 180px;
+      max-width: 80%;
+      height: auto;
+      margin: 0 auto 24px;
+      object-fit: contain;
+    }
+
     .site-title {
       margin: 0 0 50px;
       color: var(--primary);
@@ -106,6 +115,11 @@
         padding: 34px 18px;
       }
 
+      .index-logo {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+
       .site-title {
         margin-bottom: 36px;
         font-size: 2.45rem;
@@ -137,6 +151,11 @@
     }
 
     @media (max-width: 520px) {
+      .index-logo {
+        width: 125px;
+        margin-bottom: 18px;
+      }
+
       .site-title {
         font-size: 2rem;
       }
@@ -162,6 +181,8 @@
 <body>
 
   <div class="page">
+    <img src="images/logo-small.png" alt="La Bella Vida Logo" class="index-logo">
+
     <div class="site-title">LA BELLA VIDA</div>
 
     <div class="card">
@@ -173,7 +194,7 @@
         <a href="english.html" class="lang-btn">ENGLISH</a>
         <a href="espanol.html" class="lang-btn">ESPAÑOL</a>
         <a href="portuguese.html" class="lang-btn">PORTUGUÊS</a>
-            </div>
+      </div>
     </div>
   </div>
 
