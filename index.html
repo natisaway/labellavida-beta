@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>La Bella Vida</title>
+
   <link rel="icon" type="image/png" href="images/logo-small.png">
   <link rel="apple-touch-icon" href="images/logo-small.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-  <link rel="apple-touch-icon" href="images/favicon.png">  
-  
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
   <style>
     :root {
       --bg-blue: #c8daea;
+      --bg-light: #edf3f8;
       --primary: #0f5c78;
       --primary-dark: #0c4b62;
       --white: #ffffff;
       --text-dark: #1f2d3a;
+      --shadow-md: 0 8px 22px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 18px 50px rgba(0, 0, 0, 0.18);
     }
 
     * {
@@ -25,94 +30,135 @@
     body {
       margin: 0;
       min-height: 100vh;
-      background: var(--bg-blue);
+      background: linear-gradient(180deg, var(--bg-blue), var(--bg-light));
       font-family: "Segoe UI", sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
+      color: var(--text-dark);
     }
 
     .page {
       width: 100%;
-      max-width: 1100px;
+      max-width: 1200px;
       padding: 40px 20px;
       text-align: center;
     }
 
-    /* Top title */
     .site-title {
-      font-size: 3.2rem;
-      letter-spacing: 0.15em;
+      margin: 0 0 50px;
       color: var(--primary);
-      margin-bottom: 50px;
-      font-weight: 600;
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
     }
 
-    /* Card */
     .card {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 70px 50px 80px;
       background: var(--white);
       border-radius: 40px;
-      padding: 70px 40px 80px;
-      max-width: 900px;
-      margin: 0 auto;
+      box-shadow: var(--shadow-md);
     }
 
     .subtitle {
-      font-size: 1.1rem;
-      letter-spacing: 0.12em;
-      font-weight: 600;
+      margin: 0 0 60px;
       color: var(--primary);
-      margin-bottom: 60px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
-    /* Buttons */
     .lang-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 50px;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px;
     }
 
     .lang-btn {
+      min-height: 170px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 24px;
+      color: var(--white);
       background: var(--primary);
-      color: white;
-      text-decoration: none;
-      padding: 22px 60px;
-      font-size: 1.4rem;
-      font-weight: 600;
-      border-radius: 22px;
+      border-radius: 24px;
+      font-size: 1.35rem;
+      font-weight: 700;
       letter-spacing: 0.08em;
-      transition: background 0.2s ease, transform 0.2s ease;
-      min-width: 220px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 8px 18px rgba(15, 92, 120, 0.2);
+      transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     .lang-btn:hover {
       background: var(--primary-dark);
-      transform: translateY(-2px);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
+      .page {
+        padding: 34px 18px;
+      }
+
       .site-title {
-        font-size: 2.4rem;
+        margin-bottom: 36px;
+        font-size: 2.45rem;
+        letter-spacing: 0.12em;
       }
 
       .card {
-        padding: 50px 25px 60px;
-        border-radius: 28px;
+        padding: 50px 28px 60px;
+        border-radius: 30px;
+      }
+
+      .subtitle {
+        margin-bottom: 40px;
+        font-size: 1rem;
+        line-height: 1.6;
       }
 
       .lang-buttons {
-        gap: 25px;
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+        gap: 22px;
       }
 
       .lang-btn {
-        width: 100%;
-        max-width: 260px;
+        min-height: 120px;
+        font-size: 1.25rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .site-title {
+        font-size: 2rem;
+      }
+
+      .card {
+        padding: 42px 20px 48px;
+        border-radius: 26px;
+      }
+
+      .subtitle {
+        font-size: 0.9rem;
+      }
+
+      .lang-btn {
+        min-height: 105px;
+        padding: 22px 18px;
+        font-size: 1.1rem;
       }
     }
   </style>
 </head>
+
 <body>
 
   <div class="page">
@@ -126,7 +172,8 @@
       <div class="lang-buttons">
         <a href="english.html" class="lang-btn">ENGLISH</a>
         <a href="espanol.html" class="lang-btn">ESPAÑOL</a>
-      </div>
+        <a href="portuguese.html" class="lang-btn">PORTUGUÊS</a>
+            </div>
     </div>
   </div>
 
