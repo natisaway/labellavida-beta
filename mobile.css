@@ -81,6 +81,12 @@
   .transport-card-grid {
     max-width: 680px;
   }
+
+  .transport-card-grid .transport-card:nth-child(3) {
+  grid-column: auto;
+  justify-self: stretch;
+  width: 100%;
+}
 }
 
 /* =========================
@@ -654,5 +660,33 @@
     width: 45%;
     height: auto;
     object-fit: contain;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-inner {
+    height: auto;
+    min-height: 70px;
+    padding: 12px 14px 12px 72px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 34px;
+  }
+
+  .top-links {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .top-links a {
+    margin-left: 0;
+    font-size: 0.9rem;
   }
 }
